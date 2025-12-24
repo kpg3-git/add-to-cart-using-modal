@@ -23,14 +23,11 @@ function App()
 // Incase error occurs "unexpected toke <" in console.
 
   useEffect(() => {
-    fetch("https://fakestoreapi.com")
+    fetch("https://fakestoreapi.com/products")
       .then(res => res.json())
       .then(data => {
-        if (Array.isArray(data)) {
-          setProducts(data);
-        } else {
-          console.error("API did not return array", data);
-        }
+        console.log("Products:", data);
+        setProducts(data);
       })
       .catch(err => console.error("Fetch error:", err));
   }, []);
