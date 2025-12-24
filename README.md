@@ -1,4 +1,4 @@
-# Fake Store Cart Application
+# Add To Cart Using Modal
 
 ## Overview
 1. The Fake Store Cart Application is a React-based e-commerce interface that consumes data from the Fake Store API. 
